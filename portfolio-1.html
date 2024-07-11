@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navraj Singh Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&family=Poetsen+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: lightblue;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .main-content {
+            flex: 1;
+            position: relative;
+            padding-bottom: 200px; /* Ensure enough space for footer */
+        }
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            position: fixed;
+            background-color: rgb(64, 181, 220);
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            z-index: 100;
+        }
+
+        .header-name {
+            font-family: 'Poetsen One', Arial;
+            margin-left: 15px;
+            font-size: 22px;
+            margin-top: 7px;
+        }
+
+        .header-toolbar {
+            font-family: 'Poetsen One', Arial;
+            font-size: 22px;
+            margin-top: 7px;
+            position: fixed;
+            right: 15px;
+        }
+
+        .homepage-photo {
+            height: 600px;
+            border-radius: 300px;
+            position: absolute;
+            top: 200px;
+            left: 350px;
+        }
+
+        .homepage-paragraph {
+            position: absolute;
+            left: 950px;
+            top: 300px;
+        }
+
+        .homepage-title {
+            font-family: 'Poetsen One', Arial;
+            font-size: 50px;
+            margin-bottom: 12px;
+        }
+
+        .homepage-header {
+            font-family: 'Poetsen One', Arial;
+            font-size: 30px;
+            margin-bottom: 12px;
+        }
+
+        .homepage-summary {
+            width: 500px;
+            font-family: 'Plus Jakarta Sans', Arial;
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        .circle-1, .circle-2, .circle-3 {
+            display: flex;
+            width: 150px;
+            height: 100px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: black;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            border-radius: 100px;
+            background-color: rgb(237, 233, 124);
+        }
+
+        .circle-1 {
+            left: 925px;
+            top: 625px;
+            text-decoration: none;
+        }
+
+        .circle-2 {
+            left: 1125px;
+            top: 625px;
+        }
+
+        .circle-3 {
+            left: 1325px;
+            top: 625px;
+        }
+
+        .circle-1:hover, .circle-2:hover, .circle-3:hover {
+            background-color: rgb(254, 254, 80);
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            background-color: rgb(64, 181, 220);
+            border-top: 1px solid #ccc;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .footer-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer-item img {
+            width: 30px;
+            height: 30px;
+            margin-bottom: 10px;
+        }
+
+        .footer-item p {
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-name">Navraj Singh &#183; Computer Science Student</div>
+    </div>
+
+    <div class="main-content">
+        <img class="homepage-photo" src="Linkedin.jpg" alt="Homepage Photo">
+        <div class="homepage-paragraph">
+            <div class="homepage-title">
+                <u>Navraj Singh</u>
+            </div>
+            <div class="homepage-header">
+                A Bit About Me
+            </div>
+            <div class="homepage-summary">
+                Hello, I'm Navraj Singh, a dedicated Computer Science major at the University of Virginia. My passion for computer science spans across all its subfields, and I am eager to leverage my knowledge and skills to pursue a career as a software engineer. With a strong commitment to continuous learning and professional growth, I am excited to embrace new opportunities that will propel me toward achieving my goals in the tech industry.
+            </div>
+        </div>
+
+        <div class="selection-panel">
+            <a style="color:black; text-decoration: none;" href="Resume.pdf" target="_blank" class="circle-1">Resume</a>
+            <a style="color:black; text-decoration: none;" href="https://www.linkedin.com/in/navraj-rehal-76b1a2248/" target="_blank" class="circle-2">LinkedIn</a>
+            <a style="color:black; text-decoration: none;" href="portfolio-2.html" class="circle-3">Projects</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-item">
+            <img src="gmail-icon.jpg" alt="Gmail Icon">
+            <p>navrajrehal05@gmail.com</p>
+        </div>
+        <div class="footer-item">
+            <img src="github-icon.webp" alt="GitHub Icon">
+            <p>Rehal05</p>
+        </div>
+        <div class="footer-item">
+            <img src="phone-icon.jpg" alt="Phone Icon">
+            <p>516-800-7935</p>
+        </div>
+    </footer>
+</body>
+</html>

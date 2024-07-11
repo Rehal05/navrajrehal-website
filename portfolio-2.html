@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Navraj Singh Projects</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&family=Poetsen+One&display=swap" rel="stylesheet">
+        <style>
+            body{
+                margin:0;
+                font-family: Plus Jakarta Sans, Arial;
+            }
+
+            .container{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                width: 100%;
+                height: 100vh;
+            }
+
+            .column{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: transform 0.75s, background-color 0.5s;
+                padding: 20px;
+                box-sizing: border-box;
+                background-color: #e35c5c;
+                border: 1px solid #9c0d0d;
+                overflow: hidden;
+            }
+
+
+            .column img{
+                width: 400px;
+                height: 300px;
+                object-fit: cover;
+                transition: 0.5s, margin-top 0.5s;
+                margin-top: 10px;
+            }
+
+            .column h2{
+                margin: 10px 0 0 0;
+                padding: 0;
+            }
+
+            .title{
+                font-family: Plus Jakarta Sans, Arial;
+                font-weight: bold;
+            }
+
+            .column p{
+                margin: 10px 0 0 0;
+                text-align: center;
+            }
+
+            .column:hover{
+                transform: scale(1.05);
+                background-color: #ea8959;
+            }
+
+            .column:hover img {
+                transform: scale(1.05);
+            }
+
+            .column:hover h2{
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            /*
+ 
+            .container .column:not(:hover){
+                transform: scale(1.1);
+                background-color: #de8f8f;
+            }
+            */
+
+        </style>
+    </head>
+    <body style="background-color:rgb(186, 255, 186);">
+        <div class="container">
+            <div class="column" id="project1">
+                <h2 class="title">VIDEO STREAMING INTERFACE REPLICA (FRONT END)</h2>
+                <p>Developed a video streaming interface compatible with multiple devices, showcasing and connecting to various video genres. Built using HTML and CSS, leveraging CSS Grid, Flexbox, positioning techniques, responsive design, and media queries to ensure cross-device functionality. Progressed foundational HTML and CSS skills to structure content and style elements.</p>
+                <img class="youtube-project" src="youtube-project.jpg">
+            </div>
+            <div class="column" id="project2">
+                <h2 class="title">PONG GAME</h2>
+                <p>Developed a retro two player ping pong game using a school game development library. Key aspects included the implementation of core game mechanics (collision detection, scoring and ball movement) and multiplayer functionality that includes two player interaction ensuring smooth and responsive gameplay.</p>
+                <img class="pong-project" src="pong-project.jpg">
+            </div>
+            <div class="column" id="project3">
+                <h2 class="title">BLACKJACK SIMULATION</h2>
+                <p>A java based one player game with the dealer as the computer focusing on java basics including inheritance, class development and code implementation. Key elements included dealer logic which involved ensuring the computer follows the standard Blackjack rules, and game mechanics that included blackjack rules, card dealing, hit/stand logic and user betting.</p>
+                <img class="blackjack-project" src="blackjack-project.jpg">
+            </div>
+            <div class="column" id="project4">
+                <h2 class="title">E-COMMERCE WEBPAGE (FULL STACK)</h2>
+                <p>Developed a full stack e-commerce website using HTML, CSS, and JavaScript, allowing users to browse and search for products, customize options, manage their cart, and track orders. Implemented advanced features including modules, object-oriented programming, callbacks, promises, and async/await, alongside backend development and external libraries</p>
+                <img class="blackjack-project" src="e-commerce.jpg">
+            </div>
+        </div>
+    </body>
+</html>
